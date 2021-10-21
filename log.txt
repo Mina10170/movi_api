@@ -1,36 +1,26 @@
 const http = require('http'),
   fs = require('fs'),
-  url = require('url');
+ URL: /
+Timestamp: Thu Oct 21 2021 18:34:44 GMT+0200 (Central European Summer Time)
 
-http.createServer((request, response) => {
-  let addr = request.url,
-    q = url.parse(addr, true),
-    filePath = '';
+URL: /favicon.ico
+Timestamp: Thu Oct 21 2021 18:34:45 GMT+0200 (Central European Summer Time)
 
-  fs.appendFile('log.txt', 'URL: ' + addr + '\nTimestamp: ' + new Date() + '\n\n', (err) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log('Added to log.');
-    }
-  });
+URL: /documrnttion
+Timestamp: Thu Oct 21 2021 18:35:10 GMT+0200 (Central European Summer Time)
 
-  if (q.pathname.includes('documentation')) {
-    filePath = (__dirname + '/documentation.html');
-  } else {
-    filePath = 'index.html';
-  }
+URL: /favicon.ico
+Timestamp: Thu Oct 21 2021 18:35:10 GMT+0200 (Central European Summer Time)
 
-  fs.readFile(filePath, (err, data) => {
-    if (err) {
-      throw err;
-    }
+URL: /documentation
+Timestamp: Thu Oct 21 2021 18:35:18 GMT+0200 (Central European Summer Time)
 
-    response.writeHead(200, { 'Content-Type': 'text/html' });
-    response.write(data);
-    response.end();
+URL: /favicon.ico
+Timestamp: Thu Oct 21 2021 18:35:18 GMT+0200 (Central European Summer Time)
 
-  });
+URL: /
+Timestamp: Thu Oct 21 2021 18:35:34 GMT+0200 (Central European Summer Time)
 
-}).listen(8080);
-console.log('My test server is running on Port 8080.');
+URL: /asasd
+Timestamp: Thu Oct 21 2021 18:35:38 GMT+0200 (Central European Summer Time)
+
