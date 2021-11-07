@@ -9,7 +9,7 @@ const Movies = Models.Movie,
       Directors = Models.Director,
       Genres = Models.Genre;
 
-mongoose.connect('mongodb://localhost:27017/myFlixDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://127.0.0.1/myFlixDB', { useNewUrlParser: true, useUnifiedTopology: true });
 app.use(morgan('common')); //Middelware for logger.
 app.use(express.static('public')); //Middleware for static files.
 
