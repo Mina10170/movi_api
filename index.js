@@ -13,6 +13,13 @@ const Users = Models.User;
 const Genres = Models.Genre;
 const Directors = Models.Director;
 
+
+import * as atatus from 'atatus-spa';
+atatus.config('b5411a7a2ec644f3a8eeb95d14200f9b').install();
+
+atatus.notify(new Error('Test Atatus Setup'));
+
+
 // Database connection
 //mongoose.connect('mongodb://127.0.0.1/myFlixDB', { useNewUrlParser: true, useUnifiedTopology: true });
 //mongoose.connect('mongodb+srv://myFlixDBadmin:12345@myflixdb.r1ncm.mongodb.net/myFlixDB?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
