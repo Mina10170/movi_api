@@ -14,10 +14,10 @@ const Genres = Models.Genre;
 const Directors = Models.Director;
 
 
-import * as atatus from 'atatus-spa';
-atatus.config('b5411a7a2ec644f3a8eeb95d14200f9b').install();
+//import * as atatus from 'atatus-spa';
+//atatus.config('b5411a7a2ec644f3a8eeb95d14200f9b').install();
 
-atatus.notify(new Error('Test Atatus Setup'));
+//atatus.notify(new Error('Test Atatus Setup'));
 
 
 // Database connection
